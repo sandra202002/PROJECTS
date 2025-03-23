@@ -1,0 +1,16 @@
+
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<form method="POST">
+    <div class="form-group">
+        <label for="availability">Availability</label>
+        
+        <div class="form-group">
+            <label for="start_time"></label>
+            <input type="datetime-local" id="availability" name="availability" class="form-control" rows="4" required>{{ current_user.availability }}</input>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Availability</button>
+</form>
+{% endblock %}
