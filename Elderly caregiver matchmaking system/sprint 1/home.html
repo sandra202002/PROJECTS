@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silver Support</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Reset Default Styles */
+    body, h1, h2, p, ul {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Home Page - Two-Column Layout */
+    .home-container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+
+    /* Left Section (Dark Blue) */
+    .left-section {
+      flex: 1;
+      background-color: #406885;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      max-width: 250px;
+      height: auto;
+    }
+
+    /* Right Section (Light Blue) */
+    .right-section {
+      flex: 1;
+      background-color: #A9C2DA;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    /* Navigation Menu */
+    nav {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 15px 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .nav-menu {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      align-items: center;
+      width: 100%;
+    }
+
+    .nav-menu li {
+      margin: 0;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+
+    /* Login Button */
+    .login-btn a {
+      background-color: #406885;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    /* Welcome Content */
+    .content {
+      max-width: 400px;
+      margin-top: 80px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Social Media Icons */
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: black;
+      font-size: 18px;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    /* Single-Column Sections (About Us, Services, Contact) */
+    .single-column-section {
+      padding: 50px;
+      background-color: #A9C2DA;
+      text-align: center;
+    }
+
+    .single-column-section .content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Features Section */
+    .features {
+      margin-top: 20px;
+    }
+
+    .feature-cards {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #406885;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 30%;
+    }
+
+    .card i {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    form label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #406885;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #304f6a;
+    }
+  </style>
+</head>
+<body>
+  <!-- Home Page with Two-Column Layout -->
+  <div class="home-container">
+    <!-- Left Section (Logo) -->
+    <div class="left-section">
+      <img src="logo.png" alt="Silver Support Logo" class="logo">
+    </div>
+
+    <!-- Right Section (Welcome Message) -->
+    <div class="right-section">
+      <!-- Navigation Bar -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="active">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#services">OUR SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li class="login-btn"><a href="login.html">SIGN UP / LOGIN</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Welcome Content -->
+      <div class="content">
+        <h2>Welcome</h2>
+        <p>SilverSupport is an innovative online platform designed to connect families with trusted caregivers for elderly individuals. The system enables families to find the perfect caregiver based on skills, experience, and personal preferences, ensuring compassionate and reliable elderly care.</p>
+        
+        <p class="contact-info">sandrasanthosh202002@gmail.com</p>
+        <p class="contact-info">123-456-7890</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <section id="about" class="single-column-section">
+    <div class="content">
+      <h2>About Us</h2>
+      <p>SilverSupport was founded with the mission to provide families with a reliable and easy-to-use platform to find the best caregivers for their elderly loved ones. Our team is dedicated to ensuring that every caregiver on our platform is thoroughly vetted and meets our high standards of care.</p>
+      <p>We understand the challenges of finding the right caregiver, and we are here to make that process as smooth and stress-free as possible. Our platform is designed to be user-friendly, ensuring that you can find the perfect match for your family's needs.</p>
+    </div>
+  </section>
+
+  <!-- Our Services Section -->
+  <section id="services" class="single-column-section">
+    <div class="content">
+      <h2>Our Services</h2>
+      <div class="features">
+        <div class="feature-cards">
+          <div class="card">
+            <i class="fas fa-search"></i>
+            <h3>Skill-Based Search</h3>
+            <p>Find caregivers with the right skills and experience for your needs.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-calendar-check"></i>
+            <h3>Easy Scheduling</h3>
+            <p>Book caregivers based on their availability and your schedule.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Verified Caregivers</h3>
+            <p>All caregivers are verified and approved by our team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="single-column-section">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or would like to get in touch with us, please fill out the form below, and we will get back to you as soon as possible.</p>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
