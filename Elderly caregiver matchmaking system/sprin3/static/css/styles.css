@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #C9CFD0, #A9C2DA); /* Light gradient */
+    color: #032040; /* Dark text for readability */
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    background-color: #042850; /* Matching dark blue */
+    color: #C9CFD0; /* Light text */
+}
+
+.sidebar a {
+    color: #A9C2DA; /* Light blue links for contrast */
+}
+
+.content {
+    margin-left: 250px;
+}
+
+.alert-info {
+    background-color: #A9C2DA; /* Softer blue */
+    color: #032040; /* Dark text */
+}
+
+.alert-danger {
+    background-color: #4D88BF; /* A deep alert red/blue */
+    color: white;
+}
+
+.alert-success {
+    background-color: #406885; /* Muted greenish-blue */
+    color: white;
+}
+
+button, .btn {
+    background-color: #4D88BF; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+button:hover, .btn:hover {
+    background-color: #072B43; /* Darker shade on hover */
+}
